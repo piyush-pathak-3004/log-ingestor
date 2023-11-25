@@ -1,0 +1,18 @@
+{
+  "name": "log-ingector",
+  "version": "1.0.0",
+  "description": "System will support write logs in database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piyush",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongodb": "4.0",
+    "mongoose": "^8.0.1"
+  }
+}

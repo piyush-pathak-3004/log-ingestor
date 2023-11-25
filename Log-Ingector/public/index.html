@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Log Ingestor Frontend</title>
+</head>
+<body>
+
+    <h1>Log Ingestor Frontend</h1>
+
+    <button onclick="showInsertForm()">Insert Log</button>
+    <button onclick="showQueryForm()">Query Logs</button>
+
+    <div id="insertForm" class="form-container">
+        <h2>Insert Log</h2>
+        <form id="logInsertForm">
+            <label for="level">Level:</label>
+            <input type="text" id="level" required>
+            <br>
+            <label for="message">Message:</label>
+            <input type="text" id="message" required>
+            <br>
+            <label for="resourceId">Resource ID:</label>
+            <input type="text" id="resourceId" required>
+            <br>
+            <label for="timestamp">Timestamp:</label>
+            <input type="datetime-local" id="timestamp" required>
+            <br>
+            <label for="traceId">Trace ID:</label>
+            <input type="text" id="traceId" required>
+            <br>
+            <label for="spanId">Span ID:</label>
+            <input type="text" id="spanId" required>
+            <br>
+            <label for="commit">Commit:</label>
+            <input type="text" id="commit" required>
+            <br>
+            <label for="parentResourceId">Parent Resource ID:</label>
+            <input type="text" id="parentResourceId" required>
+            <br>
+            <button type="button" onclick="insertLog()">Insert Log</button>
+        </form>
+    </div>
+
+    <div id="queryForm" class="form-container">
+        <h2>Query Logs</h2>
+        <form id="logQueryForm">
+            <!-- Query form fields here -->
+            <label for="level">Level:</label>
+            <input type="text" id="level" required>
+            <br>
+            <label for="message">Message:</label>
+            <input type="text" id="message" required>
+            <br>
+            <label for="resourceId">Resource ID:</label>
+            <input type="text" id="resourceId" required>
+            <br>
+            <label for="timestamp">Timestamp:</label>
+            <input type="datetime-local" id="timestamp" required>
+            <br>
+            <label for="traceId">Trace ID:</label>
+            <input type="text" id="traceId" required>
+            <br>
+            <label for="spanId">Span ID:</label>
+            <input type="text" id="spanId" required>
+            <br>
+            <label for="commit">Commit:</label>
+            <input type="text" id="commit" required>
+            <br>
+            <label for="parentResourceId">Parent Resource ID:</label>
+            <input type="text" id="parentResourceId" required>
+            <br>
+            <button type="button" onclick="queryLogs()">Query Logs</button>
+        </form>
+    </div>
+
+    <div id="queryResults"></div>
+    <div id="insertResult"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
